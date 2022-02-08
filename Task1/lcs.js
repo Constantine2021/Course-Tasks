@@ -1,0 +1,1 @@
+l=r=>{for(d=r.reduce((e,g)=>e.length<=g.length?e:g),e=d.length,f=e;0<=f;f--)for(g=0;g<=e-f;g++)if(h=d.substring(g,f+g),r.every(e=>~e.indexOf(h)))return h;return""},process.argv.length<3?console.log(""):console.log(l(process.argv.slice(2)))
